@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="dark">
     <nav id="menu">
         <ul>
             <li class="active"><a href="#"><i class="fa fa-house"></i></a></li>
@@ -26,11 +26,16 @@
     </nav>
 
     <main id="content">
+
+        <!-- Home Page -->
+
         <section class="home">
             <p id="welcome"><b>Welcome</b></p>
             <p id="about">I am <strong>Rayan</strong></p>
             <p id="favorite"></p>
         </section>
+
+        <!-- About Page -->
 
         <section class="about">
             <img src="./images/rayan.jpg" alt="Rayan">
@@ -47,77 +52,135 @@
             </p>
         </section>
 
+        <!-- Resume Page -->
+
         <section class="resume">
             <div class="info">
                 <img src="./images/rayan.jpg" alt="Rayan">
                 <p>
                     <span><b>Name: </b>Rayan Andishmand</span>
-                    <span><b>age: </b>18</span>
+                    <span><b>BD: </b>24 October 1999</span>
                     <span><b>Address: </b>Iran, Hormozgan, Roudbar</span>
-                    <span><b>Address: </b>Iran, Hormozgan, Roudbar</span>
-                    <span><b>Address: </b>Iran, Hormozgan, Roudbar</span>
+                    <span><b>Reshteh: </b>Computer Engineering</span>
+                    <span><b>Din: </b>Islam</span>
                 </p>
             </div>
 
             <div class="expriense">
                 <h2>Expriense</h2>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </p>
+                <div class="box-content">
+                    <p>
+                        <i class="fa fa-code"></i>
+                        Front End
+                    <div class="range"></div>
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-python"></i>
+                        Back End
+                    <div class="range"></div>
+                    </p>
+                    <p>
+                        <i class="fa fa-database"></i>
+                        Database
+                    <div class="range"></div>
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-github"></i>
+                        Git
+                    <div class="range"></div>
+                    </p>
+                </div>
             </div>
 
             <div class="eduwork">
-                <h2>Education</h2>
-                
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </p>
+                <h2 class="eduhead">Education</h2>
 
-                <h2>Work Sample</h2>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </p>
+                <div class="box-content">
+                    <p>
+                        <i class="fa fa-book"></i>
+                        Bachelor of Computer Engineering
+                    </p>
+                    <p>
+                        <i class="fa fa-book"></i>
+                        Diploma in Science
+                    </p>
+                    <p>
+                        <i class="fa fa-book"></i>
+                        Diploma in Science
+                    </p>
+                </div>
+
+                <h2 class="wshead">Work Sample</h2>
+
+                <div class="box-content">
+                    <p>
+                        <i class="fa fa-laptop"></i>
+                        Store Website
+                    </p>
+                    <p>
+                        <i class="fa fa-mobile"></i>
+                        Store Android Application
+                    </p>
+                    <p>
+                        <i class="fa fa-mobile"></i>
+                        Store Android Application
+                    </p>
+                </div>
             </div>
         </section>
+
+        <!-- Linkedin Page -->
+
+        <section class="linkedin">
+            <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            <p>
+                <strong>Majid Rashedipour</strong>
+            </p>
+            <button><a href="#">Open</a></button>
+        </section>
+
+        <!-- GitHub Page -->
+
+        <section class="github">
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <p>
+                <strong>Majid Rashedipour</strong>
+            </p>
+            <button><a href="#">Open</a></button>
+        </section>
+
+        <!-- Telegram Page -->
+
+        <section class="telegram">
+            <a href="#" class="icon"><i class="fa fa-paper-plane"></i></a>
+            <p>
+                <strong>Majid Rashedipour</strong>
+            </p>
+            <button><a href="#">Open</a></button>
+        </section>
+
+        <!-- Instagram Page -->
+
+        <section class="instagram">
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <p>
+                <strong>Majid Rashedipour</strong>
+            </p>
+            <button><a href="#">Open</a></button>
+        </section>
+
+        <!-- Message Page -->
+
+        <section class="message">
+            <h2>Message</h2>
+            <form class="box-content">
+                <input type="text" name="name" id="userName" placeholder="Name">
+                <input type="email" name="email" id="userEmail" placeholder="Email">
+                <textarea name="message" id="userMessage" cols="30" rows="10" placeholder="Enter Your Message ..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
     </main>
 
     <script src="script/script.js"></script>
