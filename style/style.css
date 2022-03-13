@@ -765,7 +765,9 @@ body {
     box-shadow: var(--boxShadow-light);
     border-radius: 10px;
     overflow: hidden;
-    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    display: none;
 }
 
 .dark>#content>.message {
@@ -872,4 +874,8 @@ body {
 
 .dark>#content>.message>.box-content>button:hover {
     background: rgb(0, 135, 197);
+}
+
+#content .active {
+    display: flex;
 }

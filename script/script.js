@@ -1,4 +1,5 @@
 const list = document.querySelectorAll("li");
+const elements = document.querySelectorAll("section")
 
 function activeItem(item)
 {
@@ -36,4 +37,96 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-typeWriter()
+
+
+
+function home() {
+    typeWriter()
+    document.querySelector(".home").classList.add("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.remove("active");
+    
+}
+
+function about() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.add("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.remove("active");
+}
+
+function resume() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.add("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.remove("active");
+    
+}
+
+function linkedin() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.add("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.remove("active");
+}
+
+function github() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.add("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.remove("active");
+}
+
+function telegram() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.add("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.remove("active");
+}
+
+function instagram() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.add("active");
+    document.querySelector(".message").classList.remove("active");
+}
+
+function message() {
+    document.querySelector(".home").classList.remove("active");
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".resume").classList.remove("active");
+    document.querySelector(".linkedin").classList.remove("active");
+    document.querySelector(".github").classList.remove("active");
+    document.querySelector(".telegram").classList.remove("active");
+    document.querySelector(".instagram").classList.remove("active");
+    document.querySelector(".message").classList.add("active");
+}
