@@ -1,2 +1,2 @@
 # Portfolio
-This is a practical project for front-end web development
+This is a training project for front-end web development
